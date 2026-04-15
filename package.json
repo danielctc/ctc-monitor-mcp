@@ -1,6 +1,6 @@
 {
   "name": "ctc-monitor-mcp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": false,
   "description": "CTC Monitor MCP server — global tech intelligence for AI agents",
   "type": "module",
@@ -45,5 +45,6 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/danielctc/ctc-monitor-mcp/issues"
-  }
+  },
+  "mcpName": "io.github.danielctc/ctc-monitor-mcp"
 }

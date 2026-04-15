@@ -6,14 +6,16 @@
     "url": "https://github.com/danielctc/ctc-monitor-mcp",
     "source": "github"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "websiteUrl": "https://www.comparethecloud.net/monitor",
   "packages": [
     {
       "registryType": "npm",
       "identifier": "ctc-monitor-mcp",
-      "version": "1.0.2",
-      "transport": { "type": "stdio" },
+      "version": "1.0.3",
+      "transport": {
+        "type": "stdio"
+      },
       "environmentVariables": [
         {
           "name": "CTC_MONITOR_API_KEY",

@@ -1,0 +1,49 @@
+{
+  "name": "ctc-monitor-mcp",
+  "version": "1.0.2",
+  "private": false,
+  "description": "CTC Monitor MCP server — global tech intelligence for AI agents",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "ctc-monitor-mcp": "./dist/server.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "node --import tsx/esm src/server.ts",
+    "start": "node --import tsx/esm src/server.ts",
+    "build": "tsup src/server.ts --format esm --external @modelcontextprotocol/sdk",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0"
+  },
+  "devDependencies": {
+    "zod": "^4.3.6",
+    "tsup": "^8.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.7.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "tech-news",
+    "global-intelligence",
+    "ai-agent",
+    "claude",
+    "cursor",
+    "windsurf"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielctc/ctc-monitor-mcp.git"
+  },
+  "homepage": "https://www.comparethecloud.net/monitor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielctc/ctc-monitor-mcp/issues"
+  }
+}

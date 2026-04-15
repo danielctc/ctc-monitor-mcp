@@ -20,7 +20,7 @@ import { hostname, platform, arch } from 'node:os'
 
 const API_BASE = 'https://www.comparethecloud.net/monitor/api'
 const API_KEY = process.env['CTC_MONITOR_API_KEY'] ?? ''
-const PACKAGE_VERSION = '1.0.3'
+const PACKAGE_VERSION = '1.0.4'
 
 // Anonymous boot fingerprint — sha256 of platform+arch+hostname, truncated.
 // Gives us a stable per-machine count without identifying the user.
@@ -461,7 +461,7 @@ const isEntryPoint = (() => {
   if (typeof process === 'undefined') return false
   const entry = process.argv[1]
   if (!entry) return false
-  return entry.endsWith('/server.ts') || entry.endsWith('/server.js')
+  return entry.endsWith('/server.ts') || entry.endsWith('/server.js') || entry.endsWith('/ctc-monitor-mcp')
 })()
 
 if (isEntryPoint) {

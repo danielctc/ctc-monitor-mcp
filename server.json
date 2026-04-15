@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.danielctc/ctc-monitor-mcp",
+  "description": "Global tech intelligence for AI agents — 500+ non-western sources across China, SEA, India, MENA, Africa, LatAm, Europe. Region-balanced, cluster-aware, translated.",
+  "repository": {
+    "url": "https://github.com/danielctc/ctc-monitor-mcp",
+    "source": "github"
+  },
+  "version": "1.0.2",
+  "websiteUrl": "https://www.comparethecloud.net/monitor",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "ctc-monitor-mcp",
+      "version": "1.0.2",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        {
+          "name": "CTC_MONITOR_API_KEY",
+          "description": "Free API key. Register with a work email at https://www.comparethecloud.net/monitor",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

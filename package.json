@@ -48,6 +48,6 @@
   },
   "mcpName": "io.github.danielctc/ctc-monitor-mcp",
   "overrides": {
-    "ip-address": "10.3.1"
+    "ip-address": "^10.7.6"
   }
 }
